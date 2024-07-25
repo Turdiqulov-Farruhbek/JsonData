@@ -9,7 +9,6 @@ import (
 type Products struct{
 	Todos []Product
 	Total, Skip, Limit int
-
 }
 
 type Product struct{
@@ -58,9 +57,9 @@ func main(){
 						"total":150,"skip":0,"limit":30}
 `
 
-	var pro = Products{}
-
 //  JSON formatidagi datani oddiy data formatiga o`tqazish-----------------------------------------------------
+
+	var pro = Products{}
 	
 	err := json.Unmarshal([]byte(produc), &pro)
 	if err != nil{
