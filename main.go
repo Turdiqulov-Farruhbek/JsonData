@@ -61,6 +61,7 @@ func main(){
 	var pro = Products{}
 
 //  JSON formatidagi datani oddiy data formatiga o`tqazish-----------------------------------------------------
+	
 	err := json.Unmarshal([]byte(produc), &pro)
 	if err != nil{
 		panic("Ex: Nimadur xato ketti!!")
